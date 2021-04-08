@@ -1,0 +1,15 @@
+import openpyxl, pprint
+print ( 'Opening workbook ...')
+wb = openpyxl.load_workbook ('python_(202131403)_KIMMINSEOK_(2021_0308).xlsx')
+sheet = wb [ 'Sheet1']
+countyData = {}
+
+for row in range (1, sheet.max_row + 1) :
+    st_num = sheet [ 'A'+ str (row)]. value
+    name = sheet ['B'+ str (row)]. value
+    git = sheet [ 'D'+ str (row)]. value
+    
+{'AK': { 'KIMMINSEOK': { 'st_num': 2021031403, 'git': "https://github.com/MINSEOK-31403/python-repository.git"}}
+   }
+
+countyData ['AK'] [ 'KIMMINSEOK'] ['st_num']
